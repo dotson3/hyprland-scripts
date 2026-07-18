@@ -24,3 +24,20 @@ python3 hypr_shot.py --region   # pick a region
 
 ## ☕ Support
 Free and open. If they helped: https://www.paypal.com/paypalme/ddotson321
+
+## install-minimal.sh — full minimal setup
+
+A one-shot installer for Arch that sets up this exact minimalist Hyprland
+(omarchy spirit, no bloat): Hyprland + Waybar (clock/wifi/bluetooth) + alacritty
++ fuzzel + audio + notifications. Verified: `bash -n` clean, waybar config valid JSON.
+
+```
+sudo ./install-minimal.sh            # install
+sudo ./install-minimal.sh --dry-run  # show actions, change nothing
+sudo ./install-minimal.sh --force    # overwrite existing ~/.config
+```
+
+Then log in at a TTY and run `Hyprland`. Keybinds: SUPER+Enter (term),
+SUPER+E (launcher), SUPER+Q (close), SUPER+M (exit).
+
+> Note: targets a real Arch desktop/laptop (e.g. BEAST), not a headless Pi.
