@@ -1,0 +1,49 @@
+/* Minimal Waybar theme — dark, flat, low-chrome. */
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrains Mono Nerd Font", monospace;
+  font-size: 12px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(13, 17, 23, 0.92);
+  color: #e6edf3;
+  border-bottom: 1px solid #30363d;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  color: #8b949e;
+}
+#workspaces button.active {
+  color: #3fb950;
+  border-bottom: 2px solid #3fb950;
+}
+#workspaces button:hover {
+  color: #58a6ff;
+}
+
+#clock,
+#network,
+#bluetooth,
+#pulseaudio,
+#battery,
+#tray {
+  padding: 0 10px;
+  color: #e6edf3;
+}
+
+#clock {
+  color: #58a6ff;
+  font-weight: bold;
+}
+
+#battery.charging { color: #3fb950; }
+#battery.warning  { color: #d29922; }
+#battery.critical { color: #f85149; }
+
+#tray {
+  padding: 0 6px;
+}

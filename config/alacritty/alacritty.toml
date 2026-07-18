@@ -1,0 +1,23 @@
+# alacritty — minimal terminal config
+# (drop into ~/.config/alacritty/alacritty.toml)
+
+[font]
+normal = { family = "JetBrains Mono Nerd Font", size = 11 }
+
+[colors.primary]
+background = "#0d1117"
+foreground = "#e6edf3"
+
+[colors.normal]
+black   = "#0d1117"
+red     = "#f85149"
+green   = "#3fb950"
+yellow  = "#d29922"
+blue    = "#58a6ff"
+magenta = "#bc8cff"
+cyan    = "#39c5cf"
+white   = "#e6edf3"
+
+[window]
+opacity = 0.95
+padding = { x = 8, y = 6 }

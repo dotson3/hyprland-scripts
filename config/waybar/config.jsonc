@@ -1,0 +1,54 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 26,
+  "spacing": 8,
+  "modules-left": ["workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "bluetooth", "pulseaudio", "battery", "tray"],
+
+  "workspaces": {
+    "active-only": false,
+    "format": "{name}",
+    "on-click": "activate"
+  },
+
+  "clock": {
+    "format": "{:%H:%M  %a %d}",
+    "tooltip-format": "{:%Y-%m-%d  %H:%M:%S}",
+    "interval": 10
+  },
+
+  "network": {
+    "format-wifi": "󰖩 {essid} ({signalStrength}%)",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": "󰖪 down",
+    "tooltip-format": "{ifname} via {gw}"
+  },
+
+  "bluetooth": {
+    "format": "{name}",
+    "format-connected": "󰋋 {name}",
+    "format-disconnected": "󰋑 off",
+    "tooltip-format": "{name}\n{address}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 muted",
+    "format-icons": { "headphone": "󰋋", "handsfree": "󰋋", "headset": "󰋋", "phone": "󰋋", "portable": "󰋋", "car": "󰋋", "default": ["󰕾", "󰖀", "󰕾"] },
+    "on-click": "pavucontrol"
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-full": "󰂄 full",
+    "format-icons": ["󰂎", "󰂏", "󰂐", "󰂑", "󰂒", "󰂓", "󰂔", "󰂅"],
+    "on-click": "powertop"
+  },
+
+  "tray": {
+    "spacing": 6
+  }
+}
