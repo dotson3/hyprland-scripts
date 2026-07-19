@@ -40,4 +40,4 @@ sudo ./install-minimal.sh --force    # overwrite existing ~/.config
 Then log in at a TTY and run `Hyprland`. Keybinds: SUPER+Enter (term),
 SUPER+E (launcher), SUPER+Q (close), SUPER+M (exit).
 
-> Note: targets a real Arch desktop/laptop (e.g. BEAST), not a headless Pi.
+> Note: targets a real Arch desktop/laptop, not a headless Pi server.
